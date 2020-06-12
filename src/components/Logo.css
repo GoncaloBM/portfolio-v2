@@ -1,0 +1,33 @@
+.logo-body {
+  position: relative;
+  width: 50px;
+  height: 50px;
+
+  background-color: #226597;
+}
+
+.logo-eye-line {
+  position: absolute;
+  top: 20%;
+  height: 0.7rem;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-eye {
+  width: 0.7rem;
+  background-color: white;
+  height: 100%;
+}
+
+.left {
+    top: 0.1rem;
+    margin-left: 0.5rem;
+}
+
+.right {
+    margin-right: 0.5rem;
+}

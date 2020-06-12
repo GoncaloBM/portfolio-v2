@@ -10,9 +10,16 @@
 .logo {
   position: absolute;
   left: 10px;
-  width: 20%;
+  width: 30%;
   height: 90%;
   border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-title {
+  font-size: 1.5rem;
 }
 
 .links {
