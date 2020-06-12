@@ -1,0 +1,8 @@
+.skills-content {
+    position: absolute;
+    top: 50%;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid black;
+}
