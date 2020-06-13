@@ -1,0 +1,43 @@
+.projects-section {
+  position: relative;
+
+  width: 100%;
+  top: 15rem;
+}
+
+.project-tile {
+  width: 300px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 350px;
+  margin: 20px;
+}
+
+.project-image {
+  width: 100%;
+  height: 40%;
+  border-bottom: 1px solid black;
+}
+
+.project-title {
+  font-weight: bold;
+}
+
+.project-description {
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-tag {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 1px solid black;
+
+  border-radius: 0.5rem 0 0.5rem 0;
+}
