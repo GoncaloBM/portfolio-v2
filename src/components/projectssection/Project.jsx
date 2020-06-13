@@ -3,16 +3,20 @@ import React from "react";
 export const Project = ({ image, title, description, tags }) => {
   return (
     <div className="project-tile">
-      <div className="project-image"></div>
-      <div className="project-title">WWTBM</div>
-      <div className="project-description">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt sed
-        nemo labore consequatur provident minima, ipsum animi nihil sint,
-        obcaecati iusto qui est suscipit debitis unde ratione id magnam
-        voluptatum!
+      <div
+        className="project-image"
+        style={{ backgroundImage: `url(${image})` }}
+      >
+        <div className="hover-layer"></div>
+        <div className="code"></div>
+        <div className="live"></div>
       </div>
+      <div className="project-title">{title}</div>
+      <div className="project-description">{description}</div>
       <div className="tags">
-        <div className="project-tag">HTML</div>
+        {tags.map((tag, index) => {
+          return <div className="project-tag">{tag}</div>;
+        })}
       </div>
     </div>
   );
