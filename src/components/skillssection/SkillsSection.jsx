@@ -12,7 +12,7 @@ import NodejsLogo from "../../Images/Nodejs.png";
 import MySqlLogo from "../../Images/MySql.png";
 import RestLogo from "../../Images/restapi.png";
 
-export const SkillsSection = () => {
+export const SkillsSection = React.forwardRef((props, ref) => {
   const skills = [
     { name: "HTML", image: HTMLLogo },
     { name: "CSS", image: CSSLogo },
@@ -26,7 +26,7 @@ export const SkillsSection = () => {
   ];
 
   return (
-    <div className="skills-content">
+    <div className="skills-content" ref={ref}>
       <h2 className="skills-title"> Skills</h2>
       <div className="skills">
         {skills.map((skill) => {
@@ -35,4 +35,4 @@ export const SkillsSection = () => {
       </div>
     </div>
   );
-};
+});

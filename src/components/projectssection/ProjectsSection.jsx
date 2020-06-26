@@ -5,9 +5,9 @@ import wwtbm from "./images/wwtbm.png";
 import swizLogo from "./images/swiz-logo.jpg";
 import christmas from "./images/Christmas-Game.png";
 
-export const ProjectsSection = () => {
+export const ProjectsSection = React.forwardRef((props, ref) => {
   return (
-    <div className="projects-section">
+    <div className="projects-section" ref={ref}>
       <h2 className="projects-title">My latest projects</h2>
       <div className="projects">
         <Project
@@ -33,4 +33,4 @@ export const ProjectsSection = () => {
       </div>
     </div>
   );
-};
+});

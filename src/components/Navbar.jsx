@@ -13,9 +13,15 @@ export const Navbar = ({ scrollToContent }) => {
         <div className="link" onClick={() => scrollToContent(0)}>
           About
         </div>
-        <div className="link">Skills</div>
-        <div className="link">Projects</div>
-        <div className="link">Contact</div>
+        <div className="link" onClick={() => scrollToContent(1)}>
+          Skills
+        </div>
+        <div className="link" onClick={() => scrollToContent(2)}>
+          Projects
+        </div>
+        <div className="link" onClick={() => scrollToContent(3)}>
+          Contact
+        </div>
       </div>
     </div>
   );

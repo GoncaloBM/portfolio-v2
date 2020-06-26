@@ -1,13 +1,13 @@
 import React from "react";
 import "./AboutSection.css";
 
-export const AboutSection = () => {
+export const AboutSection = React.forwardRef((props, ref) => {
   return (
-    <div className="about-section">
+    <div className="about-section" ref={ref}>
       <h2 className="about-title">
         I'm the one who mount its own pc by the age of 12.
       </h2>
-      <p className='about-description'>
+      <p className="about-description">
         Mechanical engineer by training but my passion has always been computer
         science. I'm a very hard working person with an atention to the detail
         extremely high with focus on good quality. With my professional
@@ -21,4 +21,4 @@ export const AboutSection = () => {
       </p>
     </div>
   );
-};
+});
