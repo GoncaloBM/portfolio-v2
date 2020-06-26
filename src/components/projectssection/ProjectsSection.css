@@ -1,19 +1,19 @@
 .projects-section {
   position: relative;
-
   width: 90%;
-  top: 15rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-tile {
   width: 300px;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   height: 350px;
   margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .project-image {
@@ -44,11 +44,15 @@
 }
 
 .project-description {
+  padding: 1rem;
 }
 
 .tags {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 0.5rem;
 }
 
 .project-tag {
@@ -57,4 +61,23 @@
   border: 1px solid black;
 
   border-radius: 0.5rem 0 0.5rem 0;
+  margin: 0.1rem;
+  cursor: pointer;
+}
+
+.project-tag:hover {
+  background-color: #226597;
+  color: white;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
 }

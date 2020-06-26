@@ -1,6 +1,7 @@
 body {
   margin: 0 auto;
   height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .App {
@@ -10,4 +11,5 @@ body {
 
   width: 100%;
   position: relative;
+  align-items: center;
 }

@@ -1,14 +1,14 @@
 .skills-content {
-    position: absolute;
-    top: 50%;
+    position: relative;
     width: 80%;
-    height: 100%;
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: -250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .skills {
@@ -33,4 +33,9 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat ;
+    filter: grayscale(100%);
+}
+
+.skill-image:hover {
+    filter: grayscale(0%);
 }

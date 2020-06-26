@@ -15,6 +15,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: 0.5s all;
 }
 
 .logo-eye {
@@ -30,4 +31,9 @@
 
 .right {
     margin-right: 0.5rem;
+}
+
+.logo-body:hover .logo-eye-line{
+  height: 0.2rem;
+  top: 25%;
 }

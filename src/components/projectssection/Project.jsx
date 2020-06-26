@@ -15,7 +15,7 @@ export const Project = ({ image, title, description, tags }) => {
       <div className="project-description">{description}</div>
       <div className="tags">
         {tags.map((tag, index) => {
-          return <div className="project-tag">{tag}</div>;
+          return <a href={`https://pt.wikipedia.org/wiki/${tag}`} target="_blank" className="project-tag">{tag}</a>;
         })}
       </div>
     </div>
