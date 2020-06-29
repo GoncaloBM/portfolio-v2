@@ -16,8 +16,13 @@ export const AboutSection = React.forwardRef((props, ref) => {
         management experience, you can count with a human-bot in terms of
         organizing and task scheduling. I always like to learn the lastest
         technologies to improve myself, and to help others around to improve as
-        well. Share with me your ideas, and get ready to have your project come
-        alive.
+        well.
+        <br />
+        <br />
+        <span style={{ fontWeight: "bold" }}>
+          Share with me your ideas, and get ready to have your project come
+          alive.
+        </span>
       </p>
     </div>
   );

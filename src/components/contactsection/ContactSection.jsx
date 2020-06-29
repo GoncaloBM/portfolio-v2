@@ -59,9 +59,16 @@ export const ContactSection = React.forwardRef((props, ref) => {
         </div>
         {showForm && (
           <form>
-            <input placeholder="email" onChange={userEmail}></input>
-            <input placeholder="subject" onChange={userSubject}></input>
+            <input
+              placeholder="Enter your email..."
+              onChange={userEmail}
+            ></input>
+            <input
+              placeholder="Enter the subject..."
+              onChange={userSubject}
+            ></input>
             <textarea
+              placeholder="Tell me something"
               name="text"
               id=""
               cols="30"
