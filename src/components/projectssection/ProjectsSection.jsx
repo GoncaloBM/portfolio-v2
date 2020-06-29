@@ -43,6 +43,7 @@ export const ProjectsSection = React.forwardRef((props, ref) => {
           description={"This was my first portfolio ever."}
           tags={["HTML", "CSS", "Javascript", "React.js"]}
           githubLink={"https://github.com/GoncaloBM/react-portfolio"}
+          liveLink={"https://vibrant-goldwasser-3c2045.netlify.app/"}
         />
       </div>
     </div>
