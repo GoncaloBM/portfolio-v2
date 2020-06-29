@@ -9,7 +9,6 @@ import { SkillsSection } from "./components/skillssection/SkillsSection";
 import { ContactSection } from "./components/contactsection/ContactSection";
 
 function App() {
-
   const aboutRef = useRef(null);
   const skillRef = useRef(null);
   const projectRef = useRef(null);
@@ -29,12 +28,12 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar scrollToContent={scrollToContent}/>
+      <Navbar scrollToContent={scrollToContent} />
       <MainSection />
       <AboutSection ref={aboutRef} />
       <SkillsSection ref={skillRef} />
       <ProjectsSection ref={projectRef} />
-      <ContactSection ref={contactRef} />
+      <ContactSection ref={contactRef} scrollToContent={scrollToContent} />
       <EndSection />
     </div>
   );

@@ -1,11 +1,46 @@
 .end-section {
-    position: relative;
-    width: 100%;
-    background-color: #226597;
+  position: relative;
+  width: 100%;
+  background-color: #226597;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 12rem;
+}
 
-    height: 20rem;
+.links-end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.end-link {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  margin: 1rem;
+  border-radius: 50%;
+  margin-bottom: 0;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.5s;
+
+}
+
+.end-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.github {
+    background-image: url('./images/25231.png');
+}
+
+.linkedin {
+    background-image: url('./images/linkedin-black-icon.png');
 }
