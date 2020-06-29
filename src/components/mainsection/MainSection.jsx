@@ -1,6 +1,7 @@
 import React from "react";
 import "./MainSection.css";
 import cara from "../../Images/Cara.png";
+import rocket from '../../Images/rocket.png'
 
 export const MainSection = () => {
   return (
