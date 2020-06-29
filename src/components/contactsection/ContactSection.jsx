@@ -8,6 +8,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
   const [subject, setSubject] = useState("");
   const [emailBody, setEmailBody] = useState("");
   const [emailSent, setEmailSent] = useState(false);
+  const [showError, setShowError] = useState(false);
 
   const userEmail = (e) => {
     setEmail(e.target.value);
@@ -26,25 +27,29 @@ export const ContactSection = React.forwardRef((props, ref) => {
   };
 
   const sendEmail = () => {
-    axios
-      .post("https://goncalobm-portfolio-backend.herokuapp.com/email", {
-        email: email,
-        subject: subject,
-        emailBody: emailBody,
-      })
-      .then((res) => {
-        console.log(res);
-        setShowForm(false);
-        setEmailSent(true);
-        setTimeout(() => {
-          setEmailSent(false);
-        }, 10000);
-      })
-      .catch((error) => {
-        alert(
-          "Something happen on the Server :( Please email me directly for goncalobeiraodemira@gmail.com"
-        );
-      });
+    if (email && subject && emailBody) {
+      axios
+        .post("https://goncalobm-portfolio-backend.herokuapp.com/email", {
+          email: email,
+          subject: subject,
+          emailBody: emailBody,
+        })
+        .then((res) => {
+          console.log(res);
+          setShowForm(false);
+          setEmailSent(true);
+          setTimeout(() => {
+            setEmailSent(false);
+          }, 10000);
+        })
+        .catch((error) => {
+          alert(
+            "Something happen on the Server :( Please email me directly for goncalobeiraodemira@gmail.com"
+          );
+        });
+    } else {
+      setShowError(true);
+    }
   };
   return (
     <div className="contact-section" ref={ref}>
@@ -66,6 +71,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
             <div className="send-button" onClick={sendEmail}>
               Send
             </div>
+            {showError && <p className="error-text">Please fill all fields</p>}
           </form>
         )}
       </div>

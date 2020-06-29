@@ -68,6 +68,11 @@ textarea {
   background-color: #226496;
 }
 
+.error-text {
+  font-size: 1rem;
+  color: white;
+}
+
 @media only screen and (max-width: 600px) {
   .contact-box {
     width: 80%;
@@ -75,11 +80,11 @@ textarea {
   }
 
   .send-button {
-      width: 40%;
-      font-size: 1rem;
+    width: 40%;
+    font-size: 1rem;
   }
 
   form {
-      width: 80%;
+    width: 80%;
   }
 }

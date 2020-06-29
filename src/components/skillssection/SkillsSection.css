@@ -34,10 +34,13 @@
   background-size: contain;
   background-repeat: no-repeat;
   filter: grayscale(100%);
+  transition: 0.5s all;
 }
 
 .skill-image:hover {
   filter: grayscale(0%);
+  transform: scale(1.2);
+  
 }
 
 @media only screen and (max-width: 600px) {

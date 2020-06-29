@@ -97,7 +97,17 @@ a {
   font-weight: bold;
   z-index: 3;
   cursor: pointer;
+  transition: 0.5s all;
 }
+
+.button:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 
 .project-tile:hover .buttons {
   display: flex;
