@@ -7,6 +7,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [emailBody, setEmailBody] = useState("");
+  const [emailSent, setEmailSent] = useState(false);
 
   const userEmail = (e) => {
     setEmail(e.target.value);
@@ -33,13 +34,23 @@ export const ContactSection = React.forwardRef((props, ref) => {
       })
       .then((res) => {
         console.log(res);
+        setShowForm(false);
+        setEmailSent(true);
+        setTimeout(() => {
+          setEmailSent(false);
+        }, 10000);
+      })
+      .catch((error) => {
+        alert(
+          "Something happen on the Server :( Please email me directly for goncalobeiraodemira@gmail.com"
+        );
       });
   };
   return (
     <div className="contact-section" ref={ref}>
       <div className="contact-box">
-        <div className="contact-title" onClick={show}>
-          {showForm ? "Exit" : "Contact me"}
+        <div className="contact-title" onClick={!emailSent && show}>
+          {showForm ? "Exit" : emailSent ? "Email Sent " : "Contact me"}
         </div>
         {showForm && (
           <form>
