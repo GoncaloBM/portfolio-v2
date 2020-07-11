@@ -9,6 +9,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
   const [emailBody, setEmailBody] = useState("");
   const [emailSent, setEmailSent] = useState(false);
   const [showError, setShowError] = useState(false);
+  const [sending, setSending] = useState(false);
 
   const userEmail = (e) => {
     setEmail(e.target.value);
@@ -28,6 +29,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
 
   const sendEmail = () => {
     if (email && subject && emailBody) {
+      setSending(true);
       axios
         .post("https://goncalobm-portfolio-backend.herokuapp.com/email", {
           email: email,
@@ -38,6 +40,7 @@ export const ContactSection = React.forwardRef((props, ref) => {
           console.log(res);
           setShowForm(false);
           setEmailSent(true);
+          setSending(false);
           setTimeout(() => {
             setEmailSent(false);
           }, 10000);
