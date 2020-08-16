@@ -6,24 +6,31 @@ import swizLogo from "./images/swiz-logo.jpg";
 import christmas from "./images/Christmas-Game.png";
 import portfolio from "./images/portfolio.png";
 import currentPortofolio from "./images/currentPortfolio.png";
-import peacocktest from './images/peacock.png'
+import peacocktest from "./images/peacock.png";
+import minesweeper from "./images/minesweeper.png";
 
 export const ProjectsSection = React.forwardRef((props, ref) => {
   return (
     <div className="projects-section" ref={ref}>
       <h2 className="projects-title">My latest projects</h2>
       <div className="projects">
-      <Project
+        <Project
+          image={minesweeper}
+          title={"Minesweeper "}
+          description={
+            "Classic Game that everyone has heard with database for the time records. STILL IN PROGRESS"
+          }
+          tags={["React.js", "Node.js", "Express.js", "mySQL"]}
+          githubLink={"https://github.com/GoncaloBM/minesweeper"}
+          liveLink={"https://goncalobm-minesweeper.netlify.app/"}
+        />
+        <Project
           image={peacocktest}
           title={"Image/Color TV Test "}
           description={
             "TV app to test images and background colors on TV's. This project was done to a real client in the streaming market."
           }
-          tags={[
-            "React.js",
-            "Node.js",
-            "Express.js",
-          ]}
+          tags={["React.js", "Node.js", "Express.js"]}
           githubLink={"https://github.com/GoncaloBM/peacock-constrast-test"}
           liveLink={"https://images-colors-tv-test.netlify.app/"}
         />
