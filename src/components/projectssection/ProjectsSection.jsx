@@ -8,6 +8,7 @@ import portfolio from "./images/portfolio.png";
 import currentPortofolio from "./images/currentPortfolio.png";
 import peacocktest from "./images/peacock.png";
 import minesweeper from "./images/minesweeper.png";
+import feeder from "./images/feeder.png";
 
 export const ProjectsSection = React.forwardRef((props, ref) => {
   return (
@@ -15,10 +16,20 @@ export const ProjectsSection = React.forwardRef((props, ref) => {
       <h2 className="projects-title">My latest projects</h2>
       <div className="projects">
         <Project
+          image={feeder}
+          title={"My Baby's Feed "}
+          description={
+            "A Breastfeeding Diary, with authentication system to record all the babies' feeds. ON PROGRESS..."
+          }
+          tags={["React.js", "Node.js", "Express.js", "mySQL"]}
+          githubLink={"https://github.com/GoncaloBM/feeder-counter"}
+          liveLink={"https://www.goncalobmira.online/"}
+        />
+        <Project
           image={minesweeper}
           title={"Minesweeper "}
           description={
-            "Classic Game that everyone has heard with database for the time records. STILL IN PROGRESS"
+            "Classic Game that everyone has heard with database for the time records."
           }
           tags={["React.js", "Node.js", "Express.js", "mySQL"]}
           githubLink={"https://github.com/GoncaloBM/minesweeper"}
