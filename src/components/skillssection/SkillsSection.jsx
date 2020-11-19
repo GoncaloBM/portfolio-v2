@@ -13,6 +13,9 @@ import NodejsLogo from "../../Images/Nodejs.png";
 import MySqlLogo from "../../Images/MySql.png";
 import RestLogo from "../../Images/restapi.png";
 import GitLogo from "../../Images/Git.png";
+import GraphQLLogo from "../../Images/graphQL.png";
+import ApolloLogo from "../../Images/apollo.png";
+import CypressLogo from "../../Images/cypress.png";
 
 export const SkillsSection = React.forwardRef((props, ref) => {
   const skills = [
@@ -21,10 +24,13 @@ export const SkillsSection = React.forwardRef((props, ref) => {
     { name: "Javascript", image: JavascriptLogo },
     { name: "React.js", image: ReactjsLogo },
     { name: "React Native", image: ReactNativeLogo },
+    { name: "Cypress", image: CypressLogo },
     { name: "Sass", image: SassLogo },
     { name: "Bootstrap", image: BootstrapLogo },
     { name: "Material-UI", image: MaterialUILogo },
     { name: "Node.js", image: NodejsLogo },
+    { name: "GraphQL", image: GraphQLLogo },
+    { name: "Apollo", image: ApolloLogo },
     { name: "MySQL", image: MySqlLogo },
     { name: "Rest-API", image: RestLogo },
     { name: "GIT / Github", image: GitLogo },
