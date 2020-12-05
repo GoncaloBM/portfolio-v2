@@ -16,6 +16,8 @@ import GitLogo from "../../Images/Git.png";
 import GraphQLLogo from "../../Images/graphQL.png";
 import ApolloLogo from "../../Images/apollo.png";
 import CypressLogo from "../../Images/cypress.png";
+import ReduxLogo from "../../Images/redux.png";
+import ReduxSagas from "../../Images/redux-sagas.png";
 
 export const SkillsSection = React.forwardRef((props, ref) => {
   const skills = [
@@ -24,6 +26,8 @@ export const SkillsSection = React.forwardRef((props, ref) => {
     { name: "Javascript", image: JavascriptLogo },
     { name: "React.js", image: ReactjsLogo },
     { name: "React Native", image: ReactNativeLogo },
+    { name: "Redux", image: ReduxLogo },
+    { name: "Redux Sagas", image: ReduxSagas },
     { name: "Cypress", image: CypressLogo },
     { name: "Sass", image: SassLogo },
     { name: "Bootstrap", image: BootstrapLogo },

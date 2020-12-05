@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { visitors } from "./api/visitors";
 import "./App.css";
 import { Navbar } from "./components/Navbar";
 import { MainSection } from "./components/mainsection/MainSection";
@@ -25,6 +26,10 @@ function App() {
       contactRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  useEffect(() => {
+    visitors(1);
+  }, []);
 
   return (
     <div className="App">
